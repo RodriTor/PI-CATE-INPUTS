@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Cuántos pesos necesito?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>¿Cuántos pesos necesito?</h1>
+<div class="viaje">
+  <label for="destino">¿A dónde vas?  </label>
+  <input type="text" id="destino" list="opciones">
+  <datalist id="opciones">
+    <option value="Cuzco">
+    <option value="Río de Janeiro">
+    <option value="Miami">
+    <option value="Barcelona">
+    <option value="Tokio">
+    <option value="Ciudad de México">
+    <option value="Shanghái">
+    <option value="París">
+  </datalist>
+
+</div>
+<div class="viaje">
+  <label for="dias">¿Cuántos días vas a viajar?  </label>
+  <input type="number" id="dias" min="1">
+</div>
+  <p>Necesitás 100 pesos por día para estar tranquilo. 👀</p>
+
+  <button onclick="calcular()">Calcular</button>
+
+  <h2 id="resultado"></h2>
+
+  <script src="script.js"></script>
+</body>
+</html>
